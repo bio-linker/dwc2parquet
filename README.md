@@ -12,7 +12,7 @@ converts darwin core archive to apache parquet
 
 ## install
 
-1. sudo cp [build dir]/dwca2parquet.sif /usr/local/bin/dwca2parquet
+1. sudo cp dwca2parquet.sif /usr/local/bin/dwca2parquet
 
 ## usage 
 
