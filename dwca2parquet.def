@@ -1,6 +1,7 @@
 BootStrap: library
 From: ubuntu:18.04
 
+# see https://github.com/sylabs/examples/tree/master/machinelearning/spark
 %environment
   PATH=/usr/local/spark/bin:/usr/local/spark/sbin:$PATH
 
@@ -30,6 +31,10 @@ From: ubuntu:18.04
 
   mv spark-2.4.0-bin-hadoop2.7 spark
   rm -f spark-2.4.0-bin-hadoop2.7.tar
+
+  # less verbose spark logging
+  cat spark/conf/log4j.properties.template | sed "s/rootCategory=.*/rootCategory=FATAL,console/g" > spark/conf/log4j.properties
+
 
   # install guoda spark libs 
   mkdir -p /opt/guoda/
