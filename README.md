@@ -1,5 +1,5 @@
 # dwca2parquet
-converts darwin core archive to apache parquet
+converts darwin core archive to apache parquet. This is a [singularity](https://www.sylabs.io/guides/3.0/user-guide/) packaged app using [idigbio-spark](https://github.com/bio-guoda/idigbio-spark) . See [preston-scripts](https://github.com/bio-guoda/preston-scripts) for examples to process [Preston](https://preston.guoda.bio) tracked DwC-A archives to [Apache Parquet](https://parquet.apache.org) file format.
 
 ## dependencies
 
