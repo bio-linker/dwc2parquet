@@ -38,7 +38,7 @@ From: ubuntu:18.04
 
   # install guoda spark libs 
   mkdir -p /opt/guoda/
-  wget -O /opt/guoda/iDigBio-LD-assembly-1.5.8.jar https://s3-us-west-2.amazonaws.com/guoda/idigbio-spark/iDigBio-LD-assembly-1.5.8.jar
+  wget -O /opt/guoda/iDigBio-LD-assembly-1.5.8.jar https://github.com/bio-guoda/idigbio-spark/releases/download/0.0.1/iDigBio-LD-assembly-1.5.8.jar
 
   # Install OpenSSH to communicate between containers, and dropbear SSH server
   apt install -y --no-install-recommends --allow-change-held-packages openssh-client dropbear
